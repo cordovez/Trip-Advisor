@@ -1,5 +1,5 @@
 .container {
-  width: 1136px;
+  max-width: 1184px;
   margin: 0 auto;
 }
 /* -------------------- */
@@ -290,4 +290,47 @@ a:hover {
 /* selected link */
 a:active {
   color: rgb(53, 53, 53);
+}
+
+/* -------------------- */
+/* MEDIA QUERIES  */
+/* 1184px, 1024px et 768px */
+
+/* small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .container {
+    background-color: rgb(15, 128, 0);
+  }
+  .top-nav {
+    flex-flow: column;
+  }
+  .new-search {
+    width: 0;
+    padding: none;
+    border: none;
+  }
+  .new-search input {
+    display: none;
+  }
+  .new-search i {
+    display: flex;
+    justify-items: flex-end;
+  }
+  .buttons {
+    width: 0;
+    display: none;
+  }
+}
+
+/* medium devices  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    background-color: rgb(0, 9, 128);
+  }
+}
+/*  large devices*/
+@media (min-width: 1025px) and (max-width: 1184px) {
+  .container {
+    background-color: purple;
+  }
 }
