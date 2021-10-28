@@ -1,0 +1,282 @@
+.container {
+  width: 1136px;
+  margin: 0 auto;
+}
+/* -------------------- */
+/* TOP NAVIGATION */
+.top-nav {
+  display: flex;
+  margin-top: 160px;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-nav .logo {
+  display: flex;
+}
+.top-nav .logo img {
+  width: 188px;
+  margin-right: 28px;
+}
+.search {
+  height: 40px;
+  display: flex;
+  border: #bababa solid 2px;
+  flex: 1;
+  border-radius: 30px;
+  margin-right: 80px;
+}
+.search i {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.search input {
+  display: flex;
+  width: 90%;
+  margin: 8px;
+  border: none;
+}
+.buttons {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+
+  height: 40px;
+}
+
+.grey {
+  display: flex;
+  align-items: center;
+  font-family: "Trip Sans";
+  font-weight: bold;
+  height: 40px;
+  background: white;
+  min-width: 50px;
+  color: black;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+.grey:hover {
+  background: #cecece;
+  cursor: pointer;
+}
+.black {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: black;
+  font-family: "Trip Sans";
+  font-weight: bold;
+  color: white;
+  padding: 0 8px;
+  border-radius: 20px;
+}
+.black:hover {
+  background: rgb(44, 44, 44);
+  cursor: pointer;
+}
+.buttons i {
+  margin-right: 5px;
+}
+/* -------------------- */
+/* MAIN */
+p {
+}
+h1 {
+  font-family: "Trip Sans Med";
+  font-weight: bolder;
+  font-size: 60px;
+  margin-top: 30px;
+}
+h1 span {
+  color: #ff5e5e;
+}
+/* -------------------- */
+/* temp NAV */
+
+.new-nav {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  margin-top: 20px;
+}
+.pill {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  background: white;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.new-nav :not(:last-child) {
+  margin-right: 10px;
+}
+.pill p {
+  font-family: "Trip Sans Med";
+}
+.pill:hover {
+  background: #000;
+  color: white;
+}
+
+/* -------------------- */
+/* main PHOTOS */
+.cover-photos {
+  height: 430px;
+  margin-top: 50px;
+  display: flex;
+}
+.col1 {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  margin-right: 2px;
+}
+.col2 {
+  width: 480;
+  height: 100%;
+}
+.col1 img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.col2 img {
+  display: flex;
+  width: 100%;
+  height: calc(50% - 1.5px);
+  object-fit: cover;
+  margin-bottom: 2px;
+}
+.footnote {
+  font-family: "Trip Sans";
+  font-size: 9px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+/* -------------------- */
+/* main TEXT */
+.intro {
+  width: 560px;
+}
+p {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "Trip Sans Med";
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: "Trip Sans Med";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+h4 {
+  font-family: "Trip Sans Med";
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.theme span {
+  display: flex;
+  font-family: "Trip Sans Med";
+  margin-right: 100px;
+  box-sizing: border-box;
+}
+
+/* main Carousel */
+.immanquables {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+.theme {
+  width: 25%;
+  margin-right: 20px;
+}
+.carousel {
+  display: flex;
+  width: 75%;
+  /* background: red; */
+  overflow: scroll;
+}
+.site {
+  flex-shrink: 0;
+  width: calc((100%-15px) / 3);
+  position: relative;
+  margin-right: 15px;
+}
+.photo img {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.title p {
+  font-family: "Trip Sans";
+}
+.site i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+.site #ta {
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+  width: 30px;
+}
+/* -------------------- */
+/* FOOTER */
+footer {
+  display: flex;
+  height: 160px;
+  background: #f9f1ec;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 50px;
+  margin-right: 25px;
+}
+.logo p {
+  font-family: "Trip Sans";
+  margin-top: 20px;
+}
+.logo p span {
+  font-family: "Trip Sans Med";
+}
+.logo a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(53, 53, 53);
+}
+
+/* mouse over link */
+a:hover {
+  font-size: 18px;
+}
+
+/* selected link */
+a:active {
+  color: rgb(53, 53, 53);
+}
