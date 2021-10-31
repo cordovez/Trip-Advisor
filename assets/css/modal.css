@@ -95,3 +95,7 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.photo:before {
+  content: none;
+}
