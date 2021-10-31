@@ -81,6 +81,12 @@
   background: rgb(44, 44, 44);
   cursor: pointer;
 }
+.black #open-form {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
 .buttons i {
   margin-right: 5px;
 }

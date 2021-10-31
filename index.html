@@ -10,17 +10,11 @@
     <!-- fonts & Icons -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="/assets/fonts/Icons-v1.0/icon-styles.css">
-    <!-- icons -->
-    <!-- <script
-      src="https://kit.fontawesome.com/64a4136bfb.js"
-      crossorigin="anonymous"
-    ></script> -->
-    <!-- <i class="fas fa-pencil-alt"></i> -->
-    <!-- <i class="far fa-heart"></i> -->
-    <!-- <i class="far fa-bell"></i> -->
-    <!-- <i class="fas fa-search"></i> -->
+    <link rel="stylesheet" href="./assets/css/modal.css">
 
     <title>TripAdvisor-JC</title>
+
+    <script type="text/javascript" src="./assets/js/mymodal.js"></script>
   </head>
 
   <body>
@@ -46,8 +40,45 @@
           <div class="grey">
             <i class="e05f"></i><span>Alertes</span>
           </div>
-          <div class="black"><span>Connectez-vous</span></div>
+          <div class="black">
+            
+            <button id="open-form"><span>Connectez-vous</span></div></button>
+            
         </div>
+        <!-- Trigger/Open The Modal -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="close">&times;</div>
+            <p>Formulaire de contact</p>
+            <div class="contact-form">
+              <input
+              type="text"
+              id="prenom"
+              class="form-input"
+              placeholder="Prénom"
+            />
+            <input type="text" id="nom" class="form-input" placeholder="Nom" />
+            <input type="email" id="email" class="form-input" placeholder="Email" />
+            <textarea
+              name="description"
+              id="description"
+              rows="5"
+              cols="50"
+              placeholder="Écrivez ici votre message ..."
+            ></textarea>
+          <input type="submit" class="form-input" id="send" value="Envoyer le formulaire"></input>
+            </div>
+            
+          </div>
+        </div>
+
+
+        
+
+
       </section>
     </header>
     <main class="container">
